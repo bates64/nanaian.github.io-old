@@ -1,0 +1,85 @@
+<!doctype html>
+<meta charset='utf-8'>
+<title>alex @nanalan</title>
+
+<style>
+	body {
+		margin: 0;
+		padding: 0;
+
+		font: 18px Hack, 'Roboto Mono', monospace;
+
+		color: #999;
+		background: #020202;
+	}
+
+	header {
+		width: 100%;
+		max-width: 30em;
+
+		padding: 4px;
+		margin: 2em auto;
+
+		text-align: center;
+	}
+
+	a {
+		color: #eee;
+	}
+
+	a:hover {
+		color: black;
+		background: #eee;
+	}
+
+	.mute {
+		color: #666;
+	}
+
+	#cube {
+		width: 300px;
+		height: 300px;
+	}
+
+	@media (prefers-color-scheme: light) {
+		body {
+			color: #020202;
+			background: white;
+		}
+
+		a {
+			color: black;
+		}
+
+		a:hover {
+			color: #eee;
+			background: black;
+		}
+
+		#cube {
+			filter: invert();
+		}
+	}
+
+	@media (prefers-color-scheme: dark) {
+		body {
+			background: black;
+		}
+	}
+</style>
+
+<header>
+	<canvas id='cube'></canvas>
+
+	<p>
+		alex <span class='mute'>@nanalan</span>
+	</p>
+
+	<p>
+		<a href='https://keybase.io/nanalan'>keybase</a> |
+		<a href='https://github.com/nanaian'>github</a> |
+		<a href='https://twitter.com/nanaian_'>twitter</a>
+	</p>
+</header>
+
+<script type='module' src='cube.js'></script>
